@@ -1,7 +1,6 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-
 int main(void)
 {
     DDRD=0XFF;
@@ -13,7 +12,7 @@ int main(void)
     {
         OCR1A=ICR1-2200 ;
         _delay_ms(500);
-        OCR1A=ICR1- 200;
+        OCR1A=ICR1-200;
         _delay_ms(500);
 	}
 	return 0;
