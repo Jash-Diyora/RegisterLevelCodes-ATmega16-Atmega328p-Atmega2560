@@ -1,5 +1,6 @@
 /*
   Project Name:   <Vision Guided Autonomous Mobile Robot In Static Environment>
+  Purpose: Firmware for Nex Robotics Firebird Robot to accept commands from MATLAB.
   Author List:  <Jash Diyora, Dhaval Patel>
 */
 
@@ -84,7 +85,7 @@ int main(void)
 
     else
     {
-      stop();         // If data is not recieved from MATLAB, do nothing and continue recieving data
+      stop();  // If data is not recieved from MATLAB, do nothing and continue recieving data
     }
   }
 
