@@ -5,7 +5,7 @@ int main(void)
 {
     DDRD=0XFF;
     TCCR1A |= 1<<WGM11 | 1<<COM1A1 | 1<<COM1A0 ; //INVERTED
-    TCCR1B |= 1<<WGM12 | 1<<WGM13 | 1<<CS10 ;    // NO PRESCALE F-PWM
+    TCCR1B |= 1<<WGM12 | 1<<WGM13 | 1<<CS10 ;    // NO PRESCALE FAST-PWM
     ICR1= 19999; //2MS  0-19999=20000 50HZ
 	
 	while (1)
